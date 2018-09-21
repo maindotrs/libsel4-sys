@@ -9,7 +9,7 @@ This library provides thin Rust bindings around the [seL4 codebase](https://gith
 more idiomatic Rust wrappers for the enclosed functionality will be supplied in other crates.
 
 Intended for use in projects managed by
-[cargo-fel4](https://github.com/PolySync/cargo-fel4), see that repository
+[cargo-fel4](https://github.com/maindotrs/cargo-fel4), see that repository
 for introductory materials.
 
 ## Getting Started
@@ -97,7 +97,7 @@ the piping of key environment variables relevant to the downstream project.
   ```bash
   sudo apt-get install libxml2-utils
   ```
-* Install [cargo-fel4](https://github.com/PolySync/cargo-fel4) using the directions from that repository.
+* Install [cargo-fel4](https://github.com/maindotrs/cargo-fel4) using the directions from that repository.
 * Use `cargo-fel4` to create a new feL4 project, which will automatically include `libsel4-sys` as a dependency to build
   ```bash
   cargo fel4 new demo_project
@@ -107,7 +107,7 @@ the piping of key environment variables relevant to the downstream project.
 * Manual builds are available as an alternative to using `cargo-fel4`, though are not recommended for general use.
 * Clone the libsel4-sys repository
   ```bash
-  git clone git@github.com:PolySync/libsel4-sys.git
+  git clone https://github.com/maindotrs/libsel4-sys.git
   cd libsel4-sys
   ```
 * Pull in seL4 related dependencies to the local filesystem
@@ -128,7 +128,7 @@ libsel4-sys may be included in your Rust project by including it in your Cargo.t
 
 * In the relevant `[dependencies]` section:
   ```toml
-  libsel4-sys = { git = "https://github.com/PolySync/libsel4-sys.git", branch = "master" }
+  libsel4-sys = "0.5"
   ```
 
 ## Usage
@@ -160,7 +160,7 @@ code and exercise the resultant artifacts.
 
 ### Building
 
-See the [cargo-fel4 repository](https://github.com/PolySync/cargo-fel4) for its
+See the [cargo-fel4 repository](https://github.com/maindotrs/cargo-fel4) for its
 build and installation. 
 
 ### Running
@@ -175,12 +175,6 @@ cargo fel4 test simulate
 ```
 
 # License
-
-© 2018, PolySync Technologies, Inc.
-
-* Jon Lamb [email](mailto:jlamb@polysync.io)
-* Zack Pierce [email](mailto:zpierce@polysync.io)
-* Dan Pittman [email](mailto:dpittman@polysync.io)
 
 Please see the [LICENSE](./LICENSE) file for more details
 
