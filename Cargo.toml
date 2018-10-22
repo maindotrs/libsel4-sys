@@ -1,13 +1,14 @@
 [package]
 name = "libsel4-sys"
 description = "Builds the sel4 kernel and generates Rust bindings around it, as configured by a feL4 manifest"
-version = "0.5.1"
+version = "0.5.2"
 links = "sel4"
 build = "build.rs"
 authors = ["Jon Lamb <lamb.jon.io@gmail.com>", "Zachary Pierce <zachary.pierce@gmail.com>", "Dan Pittman <dan@dpitt.me>"]
 repository = "https://github.com/maindotrs/libsel4-sys"
 homepage = "https://github.com/maindotrs/libsel4-sys"
 license-file = "LICENSE"
+readme = "README.md"
 
 [lib]
 name = "sel4_sys"
