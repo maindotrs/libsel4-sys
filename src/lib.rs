@@ -5,6 +5,12 @@
 
 extern crate rlibc;
 
+mod shared_types;
+mod util;
+
+pub use self::shared_types::*;
+pub use self::util::*;
+
 mod c_types {
     pub type c_uint = u32;
     pub type c_int = i32;
